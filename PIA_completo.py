@@ -347,7 +347,7 @@ def hash_dehash():
 #------------------------------------------------------------------------------------
 def correo_electronico():
     remitente = '111000Aninimus010201@gmail.com'
-    destinatarios = ['christopherperrito@gmail.com']
+    destinatarios = [Correo-Reseptor'@gmail.com']
     asunto = '[RPI] Correo de prueba'
     cuerpo = 'Este es el contenido del mensaje'
     ruta_adjunto = 'Reporte_general.txt'
@@ -368,7 +368,7 @@ def correo_electronico():
      
     sesion_smtp = smtplib.SMTP('smtp.gmail.com', 587)
     sesion_smtp.starttls()
-    sesion_smtp.login('111000Aninimus010201@gmail.com','UbuntuesloMaximo')
+    sesion_smtp.login('111000Aninimus010201@gmail.com','Pasword')
     texto = mensaje.as_string()
     sesion_smtp.sendmail(remitente, destinatarios, texto)
     sesion_smtp.quit()
